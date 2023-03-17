@@ -42,4 +42,3 @@ Saturday,Samstag,,site/modules/FieldtypeRecurringDates/InputfieldRecurringDates.
 Date,Datum,,site/modules/FieldtypeRecurringDates/InputfieldRecurringDates.module,44749712dbec183e983dcd78a7736c41
 "Both date and time","Datum und Zeit",,site/modules/FieldtypeRecurringDates/InputfieldRecurringDates.module,d060352fa78723b152199ca69e02ff18
 "Hard limit on the 'Never' option of the interface. Otherwise, the RRule calculation would run into an infinite loop","Harte Grenze für die „Niemals“-Option der Schnittstelle. Andernfalls würde die RRule-Berechnung in eine Endlosschleife geraten",,site/modules/FieldtypeRecurringDates/InputfieldRecurringDates.module,dabadc90734f925b8011e8856669ecfa
-
