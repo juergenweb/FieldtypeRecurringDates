@@ -3,6 +3,8 @@
 /** @var $inputfield InputfieldRecurringDates */
 /** @var $fieldtype FieldtypeRecurringDates */
 /** @var $sanitizer Sanitizer */
+// define textdomain -> will be needed because file will be included inside another file
+$textdomain = 'site/modules/fieldtyperecurringdates/partials/alpinecomponent.php';
 ?>
 <div data-page-id="<?= $inputfield->hasPage->id ?>"
      data-field-id="<?= $inputfield->hasField->id ?>"
@@ -13,7 +15,9 @@
     <input <?= $inputfield->getAttributesString() ?>>
     <input x-model="_settings" type="hidden" name="<?= $inputfield->name ?>_settings">
     <?php
-    $pre_text = htmlspecialchars($inputfield->getAttribute('data-json-rrule'), ENT_QUOTES, "UTF-8")
+    if(!is_null($inputfield->getAttribute('data-json-rrule'))){
+        $pre_text = htmlspecialchars($inputfield->getAttribute('data-json-rrule'), ENT_QUOTES, "UTF-8");
+    }
     ?>
     <!--<pre x-ref="pre-debug" style="white-space: normal;overflow-wrap: break-word;">
         <?php /*echo $pre_text; */ ?>
@@ -28,7 +32,7 @@
                     <div>
                         <div class="uk-grid" uk-grid>
                             <div>
-                                <label class="uk-form-label">Starts on:</label>
+                                <label class="uk-form-label"><?= __('Starts on', $textdomain); ?>:</label>
                                 <input x-ref="dtstart-datetime-input"
                                        type="<?= $inputfield->getDateStartInputType() ?>"
                                        x-model="rrule.DTSTART"
@@ -42,7 +46,7 @@
                         <div class="">
                             <div class="uk-form-controls">
 
-                                <div class="uk-form-label uk-margin-small">Ends:</div>
+                                <div class="uk-form-label uk-margin-small"><?= __('Ends', $textdomain); ?></div>
 
                                 <div class="uk-grid uk-child-width-1-1 uk-grid-small" uk-grid>
                                     <div>
@@ -53,10 +57,11 @@
                                                    x-model="settings.limit_mode"
                                                    value="never"
                                                    :name="`limit-rule-options-${inputfield}`">
-                                            Never
+                                            <?= __('never', $textdomain); ?>
                                         </label>
                                         <div class="uk-inline"
-                                             uk-tooltip="Hard limits events to a count of <?= $inputfield->hardLimit ?>">
+
+                                             uk-tooltip="<?= sprintf(__('Hard limits events to a count of %s', $textdomain), $inputfield->hardLimit); ?>">
                                             <span uk-icon="ratio: 0.8; icon:question"></span>
                                         </div>
                                     </div>
@@ -68,7 +73,7 @@
                                                    x-model="settings.limit_mode"
                                                    value="until"
                                                    :name="`limit-rule-options-${inputfield}`">
-                                            On
+                                            <?= __('On', $textdomain); ?>
                                             <span class="uk-margin-small-left">
                                                     <input value=""
                                                            :disabled="settings.limit_mode !== 'until'"
@@ -87,14 +92,14 @@
                                                    value="count"
                                                    :name="`limit-rule-options-${inputfield}`">
                                             <span class="uk-margin-small-left uk-flex uk-flex-middle uk-flex-nowrap">
-                                        <span>After: </span>
+                                        <span><?= __('After', $textdomain); ?>: </span>
                                         <input x-model.number="rrule.COUNT"
                                                min="1"
                                                :disabled="settings.limit_mode !== 'count'"
                                                :name="`count-options-${inputfield}`"
                                                class="uk-input uk-margin-small-left"
                                                type="number">
-                                            <span class="uk-text-small uk-margin-small-left">occurrences</span>
+                                            <span class="uk-text-small uk-margin-small-left"><?= __('occurences', $textdomain); ?></span>
                                     </span>
                                         </label>
                                     </div>
@@ -111,17 +116,22 @@
             <div class="uk-flex-center uk-grid-small uk-grid" uk-grid>
                 <div class="uk-width-1-1">
                     <div class="">
-                        <label class="uk-form-label">Every</label>
+                        <label class="uk-form-label"><?= __('Every', $textdomain); ?></label>
                         <div class="uk-grid-small uk-child-width-1-2" uk-grid>
                             <div>
-                                <input class="uk-input uk-width-1-1" x-model.number="rrule.INTERVAL" value="">
+                                <input x-model.number="rrule.INTERVAL"
+                                       min="1"
+                                       :disabled="settings.limit_mode !== 'count'"
+                                       :name="`count-options-${inputfield}`"
+                                       class="uk-input uk-width-1-1"
+                                       type="number">
                             </div>
                             <div>
                                 <select x-model="rrule.FREQ" class="InputfieldMaxWidth uk-select">
-                                    <option value="DAILY" class="days">Day(s)</option>
-                                    <option value="WEEKLY" class="weeks">Week(s)</option>
-                                    <option value="MONTHLY" class="months">Month(s)</option>
-                                    <option value="YEARLY" class="years">Year(s)</option>
+                                    <option value="DAILY" class="days"><?= __('Day(s)', $textdomain); ?></option>
+                                    <option value="WEEKLY" class="weeks"><?= __('Week(s)', $textdomain); ?></option>
+                                    <option value="MONTHLY" class="months"><?= __('Month(s)', $textdomain); ?></option>
+                                    <option value="YEARLY" class="years"><?= __('Year(s)', $textdomain); ?></option>
                                 </select>
                             </div>
                         </div>
@@ -131,7 +141,7 @@
         </div>
         <div>
 
-            <span class="uk-form-label">Only on:</span>
+            <span class="uk-form-label"><?= __('Only on', $textdomain); ?>:</span>
             <div class="uk-margin-small-top">
 
                 <ul class="uk-list-divider uk-list">
