@@ -1,13 +1,15 @@
 <?php namespace ProcessWire;
 
-use RRule\RRule;
+// Require the classloaders
+wire('classLoader')->addNamespace('RRule', __DIR__ . '/php-rrule/src');
+wire('classLoader')->addNamespace('RRule', __DIR__ . '/php-rrule/src/tzdata');
+wire('classLoader')->addNamespace('RRule', __DIR__ . '/php-rrule/src/i18n');
 
+//use RRule\RRule;
+use RRule\RRule;
 
 class FieldtypeRecurringDates extends FieldtypeMulti
 {
-
-
-
 
     const defaultLimit = 10;
     const EXTRAS_TABLE_NAME_SUFFIX = '_extras';
@@ -25,7 +27,7 @@ class FieldtypeRecurringDates extends FieldtypeMulti
     public function __construct()
     {
         $this->set('usePagination', true);
-        $this->set('useOrderByCols', false);
+        $this->set('useOrderByCols', true);
         require_once(__DIR__ . '/RecurringDateSettings.php');
         require_once(__DIR__ . '/RecurringDate.php');
         require_once(__DIR__ . '/Occurrence.php');
@@ -44,6 +46,7 @@ class FieldtypeRecurringDates extends FieldtypeMulti
         $this->addHookBefore('Pages::deleted', $this, 'hookAfterPageDelete');
     }
 
+
     public function hookGetDates($event)
     {
 
@@ -60,7 +63,6 @@ class FieldtypeRecurringDates extends FieldtypeMulti
         $field_name = $event->fields->get($field)->name;
         $page = $event->pages->get($page);
         $value = $page->$field_name("start=$start, limit=$limit, sort=data");
-        bd($value->occurrences);
         return $value->occurrences;
     }
 
@@ -70,9 +72,9 @@ class FieldtypeRecurringDates extends FieldtypeMulti
      * @return void
      *
      */
-    public function hookAfterFieldAdded($event)
+    public function hookAfterFieldAdded(HookEvent $event)
     {
-        bd($event);
+
         $item = $event->arguments(0);
         if ($item->type->name == $this->name) {
             $table_name = $this->getExtrasTableName($item);
