@@ -1,3 +1,5 @@
+var translations = ProcessWire.config.RecurringDates;
+
 function initInputfieldRecurringDates(root) {
     if (root === undefined) {
         root = document;
@@ -44,18 +46,22 @@ document.addEventListener('alpine:init', (e) => {
             show_table: false,
             catalogues: {
                 filters: [
-                    {label: "Months", value: 'BYMONTH'},
-                    {label: "Days of the week", value: 'BYDAY'},
-                    {label: "Days of the month", value: 'BYMONTHDAY'},
+                    {label: translations.months, value: 'BYMONTH'},
+                    {label: translations.daysoftheweek, value: 'BYDAY'},
+                    {label: translations.daysofthemonth, value: 'BYMONTHDAY'},
                 ],
                 daysOfWeek: [
-                    {name: 'Sunday', value: 'SU'},
-                    {name: 'Monday', value: 'MO'},
-                    {name: 'Tuesday', value: 'TU'},
-                    {name: 'Wednesday', value: 'WE'},
-                    {name: 'Thursday', value: 'TH'},
-                    {name: 'Friday', value: 'FR'},
-                    {name: 'Saturday', value: 'SAT'},
+                    {name: translations.sunday, value: 'SU'},
+                    {name: translations.monday, value: 'MO'},
+                    {name: translations.tuesday, value: 'TU'},
+                    {name: translations.wednesday, value: 'WE'},
+                    {name: translations.thursday, value: 'TH'},
+                    {name: translations.friday, value: 'FR'},
+                    {name: translations.saturday, value: 'SAT'},
+                ],
+                months: [
+                    {name: translations.january, value: 'Jan'},
+                    {name: translations.februrary, value: 'Feb'},
                 ],
             },
             data: {
@@ -161,9 +167,9 @@ document.addEventListener('alpine:init', (e) => {
 
             getToggleText(){
                 if(!this.show_table) {
-                    return "Show dates <span uk-icon='chevron-down'></span>";
+                    return translations.showdates + " <span uk-icon='chevron-down'></span>";
                 }else{
-                    return "Hide dates <span uk-icon='chevron-up'></span>";
+                    return translations.hidedates + " <span uk-icon='chevron-up'></span>";
                 }
             },
 
