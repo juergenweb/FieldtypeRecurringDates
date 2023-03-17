@@ -31,6 +31,33 @@ class InputfieldRecurringDates extends Inputfield
     public function __construct()
     {
         parent::__construct();
+
+        // load the language translations for the InputfieldRecurringDates.js
+        $this->jsTranslations();
+    }
+
+    /**
+     * Method that hold all translatable strings for the InputfieldRecurringDate.js
+     * @return void
+     * @throws WireException
+     */
+    protected function jsTranslations()
+    {
+
+        $this->wire('config')->js('RecurringDates', [
+            'months' => $this->_('months'),
+            'daysoftheweek' => $this->_('Days of the week'),
+            'daysofthemonth' => $this->_('Days of the month'),
+            'sunday' => $this->_('Sunday'),
+            'monday' => $this->_('Monday'),
+            'tuesday' => $this->_('Tuesday'),
+            'wednesday' => $this->_('Wednesday'),
+            'thursday' => $this->_('Thursday'),
+            'friday' => $this->_('Friday'),
+            'saturday' => $this->_('Saturday'),
+            'showdates' => $this->_('Show dates'),
+            'hidedates' => $this->_('Hide dates'),
+        ]);
     }
 
     public function init()
@@ -40,7 +67,10 @@ class InputfieldRecurringDates extends Inputfield
         $this->set('startDateInput', 'date');
         $this->set('hardLimit', 5000);
         $this->modules->AlpineJS;
+
     }
+
+
 
     public function ___render()
     {
