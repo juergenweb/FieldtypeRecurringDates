@@ -5,6 +5,20 @@
 /** @var $sanitizer Sanitizer */
 // define textdomain -> will be needed because file will be included inside another file
 $textdomain = 'site/modules/fieldtyperecurringdates/partials/alpinecomponent.php';
+
+$january = __('January', $textdomain);
+$february = __('February', $textdomain);
+$march = __('March', $textdomain);
+$april = __('April', $textdomain);
+$may = __('May', $textdomain);
+$june = __('June', $textdomain);
+$july = __('July', $textdomain);
+$august = __('August', $textdomain);
+$september = __('September', $textdomain);
+$october = __('October', $textdomain);
+$november = __('November', $textdomain);
+$december = __('December', $textdomain);
+
 ?>
 <div data-page-id="<?= $inputfield->hasPage->id ?>"
      data-field-id="<?= $inputfield->hasField->id ?>"
@@ -202,7 +216,12 @@ $textdomain = 'site/modules/fieldtyperecurringdates/partials/alpinecomponent.php
                                                class="uk-checkbox"
                                                type="checkbox">
                                         <label class="uk-form-label" for="bymonth-<?= $sanitizer->name($f) ?>">
-                                            <?= $f ?>
+                                            <?php
+                                                // output the month names as translated strings
+                                                $var_name = strtolower($f);
+                                                $month_name = ${$var_name};
+                                                echo $month_name;
+                                            ?>
                                         </label>
 
                                     </div>
