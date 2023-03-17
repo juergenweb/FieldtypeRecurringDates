@@ -1,0 +1,45 @@
+en,de,description,file,hash
+January,Jänner,,site/modules/FieldtypeRecurringDates/partials/AlpineComponent.php,86f5978d9b80124f509bdb71786e929e
+February,Februar,,site/modules/FieldtypeRecurringDates/partials/AlpineComponent.php,659e59f062c75f81259d22786d6c44aa
+March,März,,site/modules/FieldtypeRecurringDates/partials/AlpineComponent.php,fa3e5edac607a88d8fd7ecb9d6d67424
+April,=,,site/modules/FieldtypeRecurringDates/partials/AlpineComponent.php,3fcf026bbfffb63fb24b8de9d0446949
+May,Mai,,site/modules/FieldtypeRecurringDates/partials/AlpineComponent.php,195fbb57ffe7449796d23466085ce6d8
+June,Juni,,site/modules/FieldtypeRecurringDates/partials/AlpineComponent.php,688937ccaf2a2b0c45a1c9bbba09698d
+July,Juli,,site/modules/FieldtypeRecurringDates/partials/AlpineComponent.php,1b539f6f34e8503c97f6d3421346b63c
+August,=,,site/modules/FieldtypeRecurringDates/partials/AlpineComponent.php,41ba70891fb6f39327d8ccb9b1dafb84
+September,=,,site/modules/FieldtypeRecurringDates/partials/AlpineComponent.php,cc5d90569e1c8313c2b1c2aab1401174
+October,Oktober,,site/modules/FieldtypeRecurringDates/partials/AlpineComponent.php,eca60ae8611369fe28a02e2ab8c5d12e
+November,=,,site/modules/FieldtypeRecurringDates/partials/AlpineComponent.php,7e823b37564da492ca1629b4732289a8
+December,Dezember,,site/modules/FieldtypeRecurringDates/partials/AlpineComponent.php,82331503174acbae012b2004f6431fa5
+"Starts on","Beginnt am",,site/modules/FieldtypeRecurringDates/partials/AlpineComponent.php,b26018154712daf8cb06967bcc03395a
+Ends,"Endet am",,site/modules/FieldtypeRecurringDates/partials/AlpineComponent.php,da22a1837931d6562e6f8491055bcd14
+never,niemals,,site/modules/FieldtypeRecurringDates/partials/AlpineComponent.php,c7561db7a418dd39b2201dfe110ab4a4
+"Hard limits events to a count of %s","Harte Begrenzung der Ereignisse auf eine Anzahl von %s",,site/modules/FieldtypeRecurringDates/partials/AlpineComponent.php,51f060761a0f729a1032e12d55626b11
+On,am,,site/modules/FieldtypeRecurringDates/partials/AlpineComponent.php,521c36a31c2762741cf0f8890cbe05e3
+After,nach,,site/modules/FieldtypeRecurringDates/partials/AlpineComponent.php,7bfcadb5535fe8aad5032762b7bfe159
+occurences,Wiederholungen,,site/modules/FieldtypeRecurringDates/partials/AlpineComponent.php,2302ceac76f38e5720f9b08c0a8856ff
+Every,Jede(n),,site/modules/FieldtypeRecurringDates/partials/AlpineComponent.php,ffcf70e892b8ac3facbac0f88602396b
+Day(s),Tag(e),,site/modules/FieldtypeRecurringDates/partials/AlpineComponent.php,c76660d589be9a49e8846e51b71744ae
+Week(s),Woche(n),,site/modules/FieldtypeRecurringDates/partials/AlpineComponent.php,afa62f9b7010d39f641f09d41ce33f5c
+Month(s),Monat(e),,site/modules/FieldtypeRecurringDates/partials/AlpineComponent.php,2003c150eaeb3fbea7c3e28da8d57fd5
+Year(s),Jahr(e),,site/modules/FieldtypeRecurringDates/partials/AlpineComponent.php,339a93c71b8ff3898a8b16f50782933b
+"Only on","Nur am",,site/modules/FieldtypeRecurringDates/partials/AlpineComponent.php,5b369e8353ae84bb7ea4b6c66997e274
+en,de,description,file,hash
+months,Monate,,site/modules/FieldtypeRecurringDates/InputfieldRecurringDates.module,da36cfaf48b9e19896e23e1207040d1e
+"Days of the week","Tage der Woche",,site/modules/FieldtypeRecurringDates/InputfieldRecurringDates.module,1643fec61d0dea692517f4ad377f5fe3
+"Days of the month","Tage des Monats",,site/modules/FieldtypeRecurringDates/InputfieldRecurringDates.module,4a080a5105846d81be03eae2ce06402d
+Sunday,Sonntag,,site/modules/FieldtypeRecurringDates/InputfieldRecurringDates.module,9d1a0949c39e66a0cd65240bc0ac9177
+Monday,Montag,,site/modules/FieldtypeRecurringDates/InputfieldRecurringDates.module,6f8522e0610541f1ef215a22ffa66ff6
+Tuesday,Dienstag,,site/modules/FieldtypeRecurringDates/InputfieldRecurringDates.module,5792315f09a5d54fb7e3d066672b507f
+Wednesday,Mittwoch,,site/modules/FieldtypeRecurringDates/InputfieldRecurringDates.module,796c163589f295373e171842f37265d5
+Thursday,Donnerstag,,site/modules/FieldtypeRecurringDates/InputfieldRecurringDates.module,78ae6f0cd191d25147e252dc54768238
+Friday,Freitag,,site/modules/FieldtypeRecurringDates/InputfieldRecurringDates.module,c33b138a163847cdb6caeeb7c9a126b4
+Saturday,Samstag,,site/modules/FieldtypeRecurringDates/InputfieldRecurringDates.module,8b7051187b9191cdcdae6ed5a10e5adc
+"Show dates","Termine anzeigen",,site/modules/FieldtypeRecurringDates/InputfieldRecurringDates.module,d00ab43d5c6ae3c720c546df1243a17b
+"Hide dates","Termine ausblenden",,site/modules/FieldtypeRecurringDates/InputfieldRecurringDates.module,5f1d9562a9dcfe64f8b3fec95b0e1f58
+"Page size",Seitegröße,,site/modules/FieldtypeRecurringDates/InputfieldRecurringDates.module,8eee0cfe6f9ff351d2c1bac75a306acd
+"Input type for start date","Eingabefeld für das Startdatum",,site/modules/FieldtypeRecurringDates/InputfieldRecurringDates.module,896a697552020e73b1983513e2959fd0
+Date,Datum,,site/modules/FieldtypeRecurringDates/InputfieldRecurringDates.module,44749712dbec183e983dcd78a7736c41
+"Both date and time","Datum und Zeit",,site/modules/FieldtypeRecurringDates/InputfieldRecurringDates.module,d060352fa78723b152199ca69e02ff18
+"Hard limit on the 'Never' option of the interface. Otherwise, the RRule calculation would run into an infinite loop","Harte Grenze für die „Niemals“-Option der Schnittstelle. Andernfalls würde die RRule-Berechnung in eine Endlosschleife geraten",,site/modules/FieldtypeRecurringDates/InputfieldRecurringDates.module,dabadc90734f925b8011e8856669ecfa
+
