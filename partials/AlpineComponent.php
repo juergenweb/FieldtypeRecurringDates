@@ -268,7 +268,11 @@ $december = __('December', $textdomain);
                         <i class="uk-margin-small-right" uk-icon="list">
                             <?php /** @var $occurrences RecurringDate */ ?>
                         </i>
-                        <?= $inputfieldValue->rrule ? $inputfieldValue->rrule->humanReadable() : "" ?>
+                        <?php
+                        // setting custom path to custom translation file
+                        $custom_path = $this->wire('config')->paths->siteModules . 'FieldtypeRecurringDates';
+                        echo $inputfieldValue->rrule ? $inputfieldValue->rrule->humanReadable(['locale'=> 'pw', 'custom_path'=> $custom_path]) : "";
+                        ?>
                     </div>
 
                     <div class="uk-width-1-1 uk-width-auto@m">
@@ -309,9 +313,9 @@ $december = __('December', $textdomain);
                            class="uk-table-small uk-table uk-table-striped">
                         <thead>
                         <tr>
-                            <th>Month</th>
-                            <th>Day</th>
-                            <th>Year</th>
+                            <th><?= __('Month'); ?></th>
+                            <th><?= __('Day'); ?></th>
+                            <th><?= __('Year'); ?></th>
                         </tr>
                         </thead>
                         <template x-for="date in data.dates">
