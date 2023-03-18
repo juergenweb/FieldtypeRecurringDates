@@ -107,6 +107,7 @@ document.addEventListener('alpine:init', (e) => {
                 });
 
                 var json_rrule = this.$refs['main-input'].dataset.rrule;
+
                 var widget_settings = this.$refs['main-input'].dataset.settings;
 
                 if (widget_settings) {
@@ -115,6 +116,7 @@ document.addEventListener('alpine:init', (e) => {
                 if (json_rrule) {
                     this.rrule = JSON.parse(json_rrule);
                     this._rrule = JSON.stringify(this.rrule);
+
                 } else {
 
                     //this.settings.limit_mode = "count";
@@ -156,7 +158,6 @@ document.addEventListener('alpine:init', (e) => {
                 this.data.pagination.start += this.data.pagination.limit
                 this.updateEventList()
             },
-
             is_filtering: function (filter) {
                 if (this.rrule[filter] !== null || this.rrule[filter] !== undefined) {
                     if (this.rrule[filter].length) {
@@ -164,7 +165,6 @@ document.addEventListener('alpine:init', (e) => {
                     }
                 }
             },
-
             getToggleText(){
                 if(!this.show_table) {
                     return translations.showdates + " <span uk-icon='chevron-down'></span>";
