@@ -1,9 +1,7 @@
 <?php namespace ProcessWire;
 
-// Require the classloaders
+// Load RRule lib via the classloader
 wire('classLoader')->addNamespace('RRule', __DIR__ . '/php-rrule/src');
-wire('classLoader')->addNamespace('RRule', __DIR__ . '/php-rrule/src/tzdata');
-wire('classLoader')->addNamespace('RRule', __DIR__ . '/php-rrule/src/i18n');
 
 //use RRule\RRule;
 use RRule\RRule;
