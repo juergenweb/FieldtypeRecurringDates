@@ -24,6 +24,9 @@ Week(s),Woche(n),,site/modules/FieldtypeRecurringDates/partials/AlpineComponent.
 Month(s),Monat(e),,site/modules/FieldtypeRecurringDates/partials/AlpineComponent.php,2003c150eaeb3fbea7c3e28da8d57fd5
 Year(s),Jahr(e),,site/modules/FieldtypeRecurringDates/partials/AlpineComponent.php,339a93c71b8ff3898a8b16f50782933b
 "Only on","Nur am",,site/modules/FieldtypeRecurringDates/partials/AlpineComponent.php,5b369e8353ae84bb7ea4b6c66997e274
+Month,Monat,,site/modules/FieldtypeRecurringDates/partials/AlpineComponent.php,7cbb885aa1164b390a0bc050a64e1812
+Day,Tag,,site/modules/FieldtypeRecurringDates/partials/AlpineComponent.php,03727ac48595a24daed975559c944a44
+Year,Jahr,,site/modules/FieldtypeRecurringDates/partials/AlpineComponent.php,537c66b24ef5c83b7382cdc3f34885f2
 en,de,description,file,hash
 months,Monate,,site/modules/FieldtypeRecurringDates/InputfieldRecurringDates.module,da36cfaf48b9e19896e23e1207040d1e
 "Days of the week","Tage der Woche",,site/modules/FieldtypeRecurringDates/InputfieldRecurringDates.module,1643fec61d0dea692517f4ad377f5fe3
@@ -42,3 +45,90 @@ Saturday,Samstag,,site/modules/FieldtypeRecurringDates/InputfieldRecurringDates.
 Date,Datum,,site/modules/FieldtypeRecurringDates/InputfieldRecurringDates.module,44749712dbec183e983dcd78a7736c41
 "Both date and time","Datum und Zeit",,site/modules/FieldtypeRecurringDates/InputfieldRecurringDates.module,d060352fa78723b152199ca69e02ff18
 "Hard limit on the 'Never' option of the interface. Otherwise, the RRule calculation would run into an infinite loop","Harte Grenze für die „Niemals“-Option der Schnittstelle. Andernfalls würde die RRule-Berechnung in eine Endlosschleife geraten",,site/modules/FieldtypeRecurringDates/InputfieldRecurringDates.module,dabadc90734f925b8011e8856669ecfa
+en,de,description,file,hash
+yearly,Jährlich,,site/modules/FieldtypeRecurringDates/pw.php,1bf712896e6077fa0b708e911d8ee0b3
+"every %s years","Alle %s Jahre",,site/modules/FieldtypeRecurringDates/pw.php,41fed207d717b0e9b94efdef1f59d593
+monthly,Monatlich,,site/modules/FieldtypeRecurringDates/pw.php,708638881f3bac9d9c8c742c79502811
+"every %s months","Alle %s Monat",,site/modules/FieldtypeRecurringDates/pw.php,83461265ed5f55eb97399305b6492c9d
+weekly,wöchentlich,,site/modules/FieldtypeRecurringDates/pw.php,4a11fc05ed694c195f0703605b64da90
+"every %s weeks","Alle %s Wochen",,site/modules/FieldtypeRecurringDates/pw.php,761a09dc16dc49491a7df69fbe0204f0
+daily,Täglich,,site/modules/FieldtypeRecurringDates/pw.php,bea79186fd7af2da67e59b4b15df5a26
+"every %s days","Alle %s Tage",,site/modules/FieldtypeRecurringDates/pw.php,886d150f718fc5d164a1f0069cbde942
+hourly,Stündlich,,site/modules/FieldtypeRecurringDates/pw.php,745fd0ea7f576f350a0eed4b8c48a8e2
+"every %s hours","Alle %s Stunden",,site/modules/FieldtypeRecurringDates/pw.php,5945f9e4fd052ba239b3bbb522a28e67
+minutely,Minütlich,,site/modules/FieldtypeRecurringDates/pw.php,3fdf0e83c5af3ed1c3dd91a4c1363a90
+"every %s minutes","Alle %s Minuten",,site/modules/FieldtypeRecurringDates/pw.php,d91a04d2b13058873c0b85aaeb0a4667
+secondly,Sekündlich,,site/modules/FieldtypeRecurringDates/pw.php,6f2eb3b24258c028ee10a5d57593a417
+"every %s seconds","Alle %s Sekunden",,site/modules/FieldtypeRecurringDates/pw.php,3a3179cbeefed19001a556b1c281bed8
+"starting from %s","ab dem %s",,site/modules/FieldtypeRecurringDates/pw.php,2f6162f1c063a935ec1a2ce9b5db7ef1
+forever,"für immer",,site/modules/FieldtypeRecurringDates/pw.php,d7af994f1f1ef8b5e3beb9f7fb139f57
+"until %s","bis zum %s",,site/modules/FieldtypeRecurringDates/pw.php,3d4b66de45a46c87a993d91fe6d682dc
+"one time",einmalig,,site/modules/FieldtypeRecurringDates/pw.php,5992f530f1f326c5d82642645bd45667
+"%s times","%s Mal insgesamt",,site/modules/FieldtypeRecurringDates/pw.php,1e2d90a743db80b57d53bb49c705db9d
+and,und,,site/modules/FieldtypeRecurringDates/pw.php,be5d5d37542d75f93a87094459f76678
+"%s of the year","%s des Jahres","e.g. the first Monday of the year, or the first day of the year",site/modules/FieldtypeRecurringDates/pw.php,430afa857577000c6edca5b03d5f017b
+"%s of the month","%s des Monats",,site/modules/FieldtypeRecurringDates/pw.php,62f6dcf792fa75b9c9f1de3dc8e87480
+"in %s","in Kalenderwoche %s",,site/modules/FieldtypeRecurringDates/pw.php,0d52952360bedad458af277a8f2aeb1e
+January,Jänner,,site/modules/FieldtypeRecurringDates/pw.php,86f5978d9b80124f509bdb71786e929e
+February,Februar,,site/modules/FieldtypeRecurringDates/pw.php,659e59f062c75f81259d22786d6c44aa
+March,März,,site/modules/FieldtypeRecurringDates/pw.php,fa3e5edac607a88d8fd7ecb9d6d67424
+April,=,,site/modules/FieldtypeRecurringDates/pw.php,3fcf026bbfffb63fb24b8de9d0446949
+May,Mai,,site/modules/FieldtypeRecurringDates/pw.php,195fbb57ffe7449796d23466085ce6d8
+June,Juni,,site/modules/FieldtypeRecurringDates/pw.php,688937ccaf2a2b0c45a1c9bbba09698d
+July,Juli,,site/modules/FieldtypeRecurringDates/pw.php,1b539f6f34e8503c97f6d3421346b63c
+August,=,,site/modules/FieldtypeRecurringDates/pw.php,41ba70891fb6f39327d8ccb9b1dafb84
+September,=,,site/modules/FieldtypeRecurringDates/pw.php,cc5d90569e1c8313c2b1c2aab1401174
+October,Oktober,,site/modules/FieldtypeRecurringDates/pw.php,eca60ae8611369fe28a02e2ab8c5d12e
+November,=,,site/modules/FieldtypeRecurringDates/pw.php,7e823b37564da492ca1629b4732289a8
+December,Dezember,,site/modules/FieldtypeRecurringDates/pw.php,82331503174acbae012b2004f6431fa5
+"on %s","am %s",,site/modules/FieldtypeRecurringDates/pw.php,81fdc9813cebe0553c55e78dc2b6029f
+Monday,Montag,,site/modules/FieldtypeRecurringDates/pw.php,6f8522e0610541f1ef215a22ffa66ff6
+Tuesday,Dienstag,,site/modules/FieldtypeRecurringDates/pw.php,5792315f09a5d54fb7e3d066672b507f
+Wednesday,Mittwoch,,site/modules/FieldtypeRecurringDates/pw.php,796c163589f295373e171842f37265d5
+Thursday,Donnerstag,,site/modules/FieldtypeRecurringDates/pw.php,78ae6f0cd191d25147e252dc54768238
+Friday,Freitag,,site/modules/FieldtypeRecurringDates/pw.php,c33b138a163847cdb6caeeb7c9a126b4
+Saturday,Samstag,,site/modules/FieldtypeRecurringDates/pw.php,8b7051187b9191cdcdae6ed5a10e5adc
+Sunday,Sonntag,,site/modules/FieldtypeRecurringDates/pw.php,9d1a0949c39e66a0cd65240bc0ac9177
+"the first %s","ersten %s","e.g. the first Monday",site/modules/FieldtypeRecurringDates/pw.php,7ac1c085cd80e199caa1711e834137b2
+"the second %s","zweiten %s",,site/modules/FieldtypeRecurringDates/pw.php,3f809eeaf28db566138be74e40b71e3b
+"the third %s",dritten,,site/modules/FieldtypeRecurringDates/pw.php,3478d7f7ba96e0579e39e0b1e0bc666e
+"the %sth %s",%s,,site/modules/FieldtypeRecurringDates/pw.php,4730eae278718919000771077ea00f5d
+"the last %s","letzten %s","e.g. the last Monday",site/modules/FieldtypeRecurringDates/pw.php,2060d4bd845ccf039e6105a800ba8c87
+"the penultimate %s","vorletzten %s",,site/modules/FieldtypeRecurringDates/pw.php,69bfadc531328247216ead9cd37267db
+"the antepenultimate %s","vorletzten %s",,site/modules/FieldtypeRecurringDates/pw.php,9276aa16e6a653d2bcd2933fad2c69f0
+"the %sth to the last %s","%s. letzten %s",,site/modules/FieldtypeRecurringDates/pw.php,8a986c0c7720ac84fee4302e5d707792
+"on week %s","in Woche %s",,site/modules/FieldtypeRecurringDates/pw.php,7abba3849b8453a976d88811531147fd
+"on weeks number %s","in Kalenderwoche %s",,site/modules/FieldtypeRecurringDates/pw.php,d69255a90aae2914ae1b6b2031e5ca37
+%s,=,,site/modules/FieldtypeRecurringDates/pw.php,1c481aa99d081c32182011a758f73d33
+"the 1st","ersten Tag",,site/modules/FieldtypeRecurringDates/pw.php,63eeec52c27a035ae8741558e59eef42
+"the 2nd","zweiten Tag",,site/modules/FieldtypeRecurringDates/pw.php,f7f99a0e849ab13f8d69b0a4c8e4516d
+"the 3rd","dritten Tag",,site/modules/FieldtypeRecurringDates/pw.php,827f71592695b5ff2efdf7436c4740f2
+"the 21st","21sten Tag",,site/modules/FieldtypeRecurringDates/pw.php,7dc180f4ecd33f78fdfb6357da6c7aa1
+"the 22nd","22sten Tag",,site/modules/FieldtypeRecurringDates/pw.php,13b48b311b32f04a0e89835621de0f72
+"the 23rd","23sten Tag",,site/modules/FieldtypeRecurringDates/pw.php,37e9f11635885cb1f1ade1ecdf02b4f7
+"the 31st","31sten Tag",,site/modules/FieldtypeRecurringDates/pw.php,1e3c805247250614a688ee4efee745c4
+"the %sth","%sten Tag",,site/modules/FieldtypeRecurringDates/pw.php,1b24aab11b1daf8977a775cca960e47d
+"the last day","letzten Tag",,site/modules/FieldtypeRecurringDates/pw.php,41fb322e807a830e79cebe1bd7bda8ba
+"the penultimate day","vorletzten Tag",,site/modules/FieldtypeRecurringDates/pw.php,04105b471f6be853d23004af07b3bda6
+"the antepenultimate day","vorletzten Tag",,site/modules/FieldtypeRecurringDates/pw.php,4bd7966bbd0e3541cd3fdc1cddb24ebc
+"the 21st to the last day","vom 21sten bis zum letzten Tag",,site/modules/FieldtypeRecurringDates/pw.php,d3fd7c41a1b9d32610ce3788b3925f1d
+"the 22nd to the last day","vom 22sten bis zum letzten Tag",,site/modules/FieldtypeRecurringDates/pw.php,5b3c618d3aa7ad837639fda6c8279f2a
+"the 23rd to the last day","vom 23sten bis zum letzten Tag",,site/modules/FieldtypeRecurringDates/pw.php,1bb6aef08b2e19da825ac968da50ad7c
+"the 31st to the last day","vom 31sten bis zum letzten Tag",,site/modules/FieldtypeRecurringDates/pw.php,1078d5d6c79101638b88719351481a57
+"the %sth to the last day","vom %ssten bis zum letzten Tag",,site/modules/FieldtypeRecurringDates/pw.php,a7905bd4f79b7cde60a1d47ec4bcde28
+"on %s day","am %s Tag",,site/modules/FieldtypeRecurringDates/pw.php,3148abdde77cfaacc50dac5682e74583
+"on %s days","am %s Tag",,site/modules/FieldtypeRecurringDates/pw.php,3d7275b1f9726022688e5134a95c1fc8
+"the first",ersten,,site/modules/FieldtypeRecurringDates/pw.php,7e79441b624883ef4f3216c5b1ef2e3a
+"the second",zweiten,,site/modules/FieldtypeRecurringDates/pw.php,3212eb1ca5254451d20dfc92428d2cbe
+"the third",dritten,,site/modules/FieldtypeRecurringDates/pw.php,4fa2bc09c71133626e5b53b86708d289
+"the last",letzten,,site/modules/FieldtypeRecurringDates/pw.php,f926638c2ed104926d7cdc75388d7fc2
+"the penultimate",vorletzten,,site/modules/FieldtypeRecurringDates/pw.php,60899754096eb9cdd697746503d7a764
+"the antepenultimate",vorletzten,,site/modules/FieldtypeRecurringDates/pw.php,ca3d4dde5c640647c17792bf904dacde
+"the %sth to the last","%s}. letzten",,site/modules/FieldtypeRecurringDates/pw.php,96ac7df2bfabc843fac9d687e9e10ab4
+"at %s","am %s",,site/modules/FieldtypeRecurringDates/pw.php,9e3dc8a04f13896391348ce5cbea253f
+%{n}h,"%s Std",,site/modules/FieldtypeRecurringDates/pw.php,dc1bae5ee1012230dfaf36b93e1e7183
+"at minute %s","und %s Minute",,site/modules/FieldtypeRecurringDates/pw.php,93c59c9846ecd71bd04d227a59a09cfb
+"at minutes %s","und %s Minuten",,site/modules/FieldtypeRecurringDates/pw.php,daa998674af4ac1e607083402671d684
+"at second %s","und %s Sekunde",,site/modules/FieldtypeRecurringDates/pw.php,3d0b5f972f8631c2ab257f07e7d9af16
+"at seconds %s","und %s Sekunden",,site/modules/FieldtypeRecurringDates/pw.php,b06fe2179a7736e02b45ff25cf63b25b
+"but only %s instance of this set","nur %s Auftreten",,site/modules/FieldtypeRecurringDates/pw.php,9bf0d9528c726483cc346cb6c2784336
